@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="/tp 7/styles/style-main.css">
+  <link rel="stylesheet" href="/tp 7/styles/checkout.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="contenedor-checkout">
+    <h1>Confirmar Compra</h1>
+    <div class="campo">
+      <h2>Puntos a usar:</h2>
+      <p>39.997</p>
+      <p>x 0.5</p>
+    </div>
+
+    <div class="total">
+      <p>Total a pagar:</p>
+      <span id="resultado">$19.998,5</span>
+    </div>
+    <div class="contenedor-boton contenedor-checkout">
+      <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+      data-preference-id="1068797710-3c680a28-bab2-4f52-b46c-57569eb140b3" data-source="button"
+      class="btn-pagar">
+      </script>
+    </div>
+    <br>
+    <br>
+    <p><a href="/tp 7/main.html" class="volver">Volver a la pagina principal</a></p>
+  </div>
+
+</body>
+</html>

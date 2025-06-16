@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coca-Cola</title>
+  <link rel="stylesheet" href="/tp 7/styles/style-main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <a href="/tp 7/main.html"><img src="../assets/logo.png" alt="Logo" class="logo"></a>
+    <div class="search-bar">
+      <input type="text" placeholder="🔎 Buscar productos...">
+    </div>
+    <a href="/tp 7/carrito/carrito.html" target="_blank"><i class="fas fa-shopping-cart carrito zoom"></i></a>
+    
+    <!--Sidebar-->
+    <div class="sidebar-wrapper">
+    <img src="../assets/user-icon.png" class="user-icon zoom" alt="Usuario">
+      <div id="barralateral" class="sidebar card-carrito">
+        <a href="#" class="">Perfil</a>
+        <a href="#">Mis pedidos</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Categorías -->
+  <br>
+  <nav class="categorias">
+    <button class="zoom"><i>🛵</i>Todos</button>
+    <button class="zoom"><i>🍔</i>Hamburguesas</button>
+    <button class="zoom"><i>🍕</i>Pizzas</button>
+    <button class="zoom"><i>🍺</i>Bebidas</button>
+    <button class="zoom"><i>🍰</i>Postres</button>
+    <button class="zoom"><i>🍽️</i>Combos</button>
+  </nav>
+
+  <!-- Navegación -->
+  <br>
+  <div class="barra-navegacion-producto">
+    <a href="/tp 7/main.html" class="volver">&larr; Volver al listado</a>
+    <span class="separador">&rarr;</span>
+    <span class="categoria"> Postres</span>
+    <span class="separador">&rarr;</span>
+    <span class="producto-actual"> Chocotorta</span>
+  </div>
+
+  <!--chocotorta-->
+  
+  <div class="producto-ampliado">
+  <div class="producto-info">
+    <div class="producto-imagen">
+      <img src="../assets/productos/chocotorta.png" alt="Chocotorta">
+    </div>
+  <div class="producto-detalle">
+    <h2>Porcion de Chocotorta</h2>
+      <p class="precio"><span>4.999 puntos</span></p>
+      <p class="descripcion">
+        La chocotorta es un postre argentino clásico, hecho con capas de galletas de chocolate y una mezcla de queso crema y dulce de leche. Es fácil de preparar y no requiere horno, lo que la convierte en una opción perfecta para cualquier ocasión. Su sabor dulce y cremoso la hace irresistible para los amantes de los postres.
+      </p>
+      <br>
+    <a href="/tp 7/carrito/carrito.html"><button class="btn-agregar">Agregar al carrito</button></a>
+    </div>
+  </div>
+
+  <!--Productos relacionados-->
+
+  <div class="producto-relacionados">
+    <h3>También te puede interesar</h3>
+    <div class="relacionados-grid">
+      <div class="producto-relacionado">
+        <a href="/tp 7/productos/whiskey.html"><img src="/tp 7/assets/productos/whiskey.png" alt="Whisky"></a>
+        <p>Whisky</p>
+        <span>P.18999</span>
+      </div>
+      
+      <div class="producto-relacionado">
+        <a href="/tp 7/productos/coca.html"><img src="/tp 7/assets/productos/cocacolas.png" alt="Coca Cola"></a>
+        <p>Pack Coca Cola</p>
+        <span>P.8999</span>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+  <div class="social-container">
+    <ul class="social-icons">
+        <a href="https://x.com/home" target="_blank"><img src="/tp 7/assets/socialmedia/xicon.png" alt="X"> </a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="/tp 7/assets/socialmedia/instagramicon.png" alt="Instagram"> </a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="/tp 7/assets/socialmedia/facebookicon.png" alt="Facebook" ></a>
+        <a href="https://wa.me/+542657234218" target="_blank"><img src="/tp 7/assets/socialmedia/whatsappicon.png" alt="Whatsapp"> </a>
+        <a href="https://github.com/Niquinhoo" target="_blank"><img src="/tp 7/assets/socialmedia/github.png" alt="Github"> </a>
+    </ul>
+  </div>
+    <br>
+    <p>© 2025. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
