@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi cuenta</title>
+  <link rel="stylesheet" href="/styles/style-main.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <a href="/index.html"><img src="/assets/logo.png" alt="Logo" class="logo"></a>
+    <div class="search-bar">
+      <input type="text" placeholder="🔎 Buscar productos...">
+    </div>
+    <a href="/carrito/carrito.html" target="_blank"><i class="fas fa-shopping-cart carrito zoom"></i></a>
+    
+    <!--Sidebar-->
+
+    <a href="#sidebar" class="user-icon-link">
+      <img src="/assets/user-icon.png" class="user-icon" alt="Perfil">
+    </a>
+
+    <div id="sidebar" class="sidebar">
+      <a href="#">✕ Cerrar</a>
+      <ul>
+        <li><a href="/informacion/informacioncuentas.html">Mi cuenta</a></li>
+        <li><a href="/compras/comprashistorial.html">Mis compras</a></li>
+        <li><a href="/login/login.html">Cerrar sesión</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Categorías -->
+  <br>
+  <nav class="categorias">
+    <button class="zoom"><i>🛵</i>Todos</button>
+    <button class="zoom"><i>🍔</i>Hamburguesas</button>
+    <button class="zoom"><i>🍕</i>Pizzas</button>
+    <button class="zoom"><i>🍺</i>Bebidas</button>
+    <button class="zoom"><i>🍰</i>Postres</button>
+    <button class="zoom"><i>🍽️</i>Combos</button>
+  </nav>
+  <br>
+
+  <div class="contenedor-cuenta">
+    <section class="info-cuenta">
+      <h2>Información de la cuenta</h2>
+      <p><strong>Email:</strong> nicotrib699@gmail.com</p>
+      <p><strong>Teléfono:</strong> +54 2657-234218</p>
+    </section>
+
+    <section class="historial-compras">
+      <h2>Compras realizadas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Fecha</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Producto">Pizza Napolitana</td>
+            <td data-label="Fecha">10/04/2025</td>
+            <td data-label="Precio">P.10999</td>
+          </tr>
+          <tr>
+            <td data-label="Producto">Pack Coca-Colas</td>
+            <td data-label="Fecha">02/04/2025</td>
+            <td data-label="Precio">P.8999</td>
+          </tr>
+          <tr>
+            <td data-label="Producto">Chocotorta</td>
+            <td data-label="Fecha">15/03/2025</td>
+            <td data-label="Precio">P.4990</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+</body>
+</html>

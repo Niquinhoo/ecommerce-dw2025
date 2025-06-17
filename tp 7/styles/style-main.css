@@ -290,23 +290,46 @@ footer {
     }
 
     /* sidebar*/
-  .sidebar-wrapper {
-    position: relative;
+  .user-icon-link {
+    display: inline-block;
   }
 
   .sidebar {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 100%;
-    background: white;
-    padding: 10px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    right: -250px; 
+    width: 200px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 1000;
   }
 
-  .sidebar-wrapper:hover .sidebar {
-    display: block;
+  .sidebar:target {
+    right: 0;
   }
+
+  .sidebar a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  .sidebar ul li a:hover {
+    color: #000;
+    text-decoration: underline;
+  }
+
 
   /* productos ampliados */
   .producto-ampliado {
@@ -531,6 +554,49 @@ footer {
   height: 24px;
 }
 
+/* cuenta */
+    .contenedor-cuenta {
+      max-width: 900px;
+      margin: auto;
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      padding: 30px;
+    }
+
+    .info-cuenta h2, .historial-compras h2 {
+      margin-bottom: 15px;
+      color: #a4a4a4;
+    }
+
+    .info-cuenta p {
+      font-size: 1em;
+      margin-bottom: 8px;
+      color: #444;
+    }
+
+    .historial-compras table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    .historial-compras th,
+    .historial-compras td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #e1e1e1;
+    }
+
+    .historial-compras th {
+      background-color: #a4a4a4;
+      color: white;
+    }
+
+    .historial-compras tr:hover {
+      background-color: #f9f9f9;
+    }
+
 /* mobile */
 
 @media (max-width: 768px) {
@@ -642,6 +708,39 @@ footer {
     .banner-publicidad {
     flex: 1 1 100%;
   }
+        .contenedor-cuenta {
+        padding: 15px;
+      }
+
+      .historial-compras table,
+      .historial-compras thead,
+      .historial-compras tbody,
+      .historial-compras th,
+      .historial-compras td,
+      .historial-compras tr {
+        display: block;
+      }
+
+      .historial-compras tr {
+        margin-bottom: 15px;
+      }
+
+      .historial-compras td {
+        padding-left: 50%;
+        position: relative;
+      }
+
+      .historial-compras td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        color: #555;
+      }
+
+      .historial-compras th {
+        display: none;
+      }
 }
 
 
